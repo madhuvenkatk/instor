@@ -12,6 +12,9 @@ z-index: 12;
 /* Third Nav */
 /* justify-content: flex-start; */
 font-size:20px;
+@media screen and (max-width: 480px) {
+	padding: 0.2rem 50px;
+}
 `;
 
 export const NavLink = styled(Link)`
@@ -31,8 +34,8 @@ font-size:20px;
 export const Bars = styled(FaBars)`
 display: none;
 color: #808080;
-@media screen and (max-width: 768px) {
-	display: block;
+@media screen and (max-width: 480px) {
+	display: flex;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -40,6 +43,7 @@ color: #808080;
 	font-size: 1.8rem;
 	cursor: pointer;
 }
+
 `;
 
 export const NavMenu = styled.div`
@@ -51,8 +55,8 @@ margin-right: -24px;
 /* Third Nav */
 /* width: 100vw;
 white-space: nowrap; */
-@media screen and (max-width: 768px) {
-	display: none;
+@media screen and (max-width: 480px) {
+	display: flex;
 }
 `;
 
@@ -63,7 +67,7 @@ margin-right: 24px;
 /* Third Nav */
 /* justify-content: flex-end;
 width: 100vw; */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	display: none;
 }
 `;
