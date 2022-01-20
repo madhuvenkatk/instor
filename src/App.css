@@ -319,12 +319,27 @@ tr:nth-child(even) {
 
 }
 
-.col1 {
-    padding-left: 65%;
-    margin-left: 0;
-    font-size: 15px;
-    font-weight: bold;
+@media screen 
+and (max-width: 480px
+) {
+  .col1 {
+      padding-left: 50%;
+      margin-left: 0;
+      font-size: 15px;
+      font-weight: bold;
+    }  
   }
+
+  @media screen 
+  and (min-width: 600px
+  ) {
+    .col1 {
+        padding-left: 65%;
+        margin-left: 0;
+        font-size: 15px;
+        font-weight: bold;
+      }  
+    }
 
 .col2 {
     padding-left: 10%;
