@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {useEffect, useState} from 'react';
 import FontAwesomeIcon from 'font-awesome/css/font-awesome.min.css';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
 
@@ -28,6 +30,11 @@ console.log(subTotal); // 36 calories
 
 const Shopcart = () => {
 
+    const [date, setCheckInDate,setCheckOutDate] = useState(new Date());
+    const handleCheckInDate = (date) => {
+        setCheckInDate(date);
+        setCheckOutDate(null);
+      };
  
     function addcart() {
         console.log('object');       
@@ -107,6 +114,7 @@ const Shopcart = () => {
     </div> 
 
     </div>
+    
     <div class="column">
     <form>
     <h2>Your Info</h2>    
@@ -122,11 +130,19 @@ const Shopcart = () => {
     <label for="fname">Address</label><br></br>
     <textarea id="address" name="address" rows="4" cols="40"></textarea>
     <br></br>
+    <label for="fname">Preferred Delivery Date</label><br></br>
+    <div>
+    <DatePicker  
+              selected={date }  
+              onChange={ handleCheckInDate }  
+              name="startDate"  
+              dateFormat="MM/dd/yyyy"  
+          />
+      </div>      
     </form>
     <br></br>
     <a href="/about"><button onClick="sendemail()" class="btn_green">Proceed to Checkout</button></a>
     <br></br>
-    
     </div>
     </div>
     </div>
