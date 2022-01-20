@@ -119,11 +119,12 @@ const Shopcart = () => {
     <input class="form-control-lg" type="text" id="phone" name="email" required></input>
     <br></br>
     <label for="fname">Address</label><br></br>
-    <textarea id="address" name="address" rows="4" cols="50"></textarea>
+    <textarea id="address" name="address" rows="4" cols="40"></textarea>
     <br></br>
     </form>
     <br></br>
     <a href="/about"><button onClick="sendemail()" class="btn_green">Proceed to Checkout</button></a>
+    <br></br>
     
     </div>
     </div>
