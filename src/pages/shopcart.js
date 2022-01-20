@@ -23,6 +23,7 @@ console.log(subTotal); // 36 calories
 } else {
   subTotal = 0 ;
   subTotPrice = 0;
+  products_arr = [];
 }
 
 const Shopcart = () => {
