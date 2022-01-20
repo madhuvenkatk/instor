@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import {useEffect, useState} from 'react';
 import FontAwesomeIcon from 'font-awesome/css/font-awesome.min.css';
 import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import datepickercss from "react-datepicker/dist/react-datepicker.css";
 
 
 
