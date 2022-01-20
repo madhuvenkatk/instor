@@ -41,7 +41,6 @@ const Shopcart = () => {
     }
 
     const removerow = (e,i) => {
-        alert(i);
         var existing = JSON.parse(localStorage.getItem('productsarray'));	
         existing.splice(i,1);
         localStorage.setItem('productsarray', JSON.stringify(existing));

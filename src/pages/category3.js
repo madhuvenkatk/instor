@@ -86,7 +86,6 @@ if("productsarray" in localStorage){
     });
 	localStorage.setItem('productsarray', JSON.stringify(existing));
  } else {
-	alert('no');
 	localStorage.setItem('productsarray', JSON.stringify(productsnew));
  }	
 
@@ -104,7 +103,6 @@ const renderCard = (card, index) => {
     <Card.Body>
     <Card.Title class="cardtitle">{card.title}</Card.Title>   
 	<Card.Title class="cardprice">{card.currency}{card.price}</Card.Title>
-	<br></br>
     </Card.Body>
 	<a href="/checkout"><Button key = {index} value={card.title} onClick = {addcart} class="btn">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></Button></a>
  
